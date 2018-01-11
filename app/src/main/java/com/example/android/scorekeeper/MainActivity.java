@@ -7,13 +7,26 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
     //Tracks the score for Team A
     int scoreTeamA = 0;
 
-    int foults = 0;
+    //Tracks the fouls for Team A
+    int foulsA = 0;
+
+    //Tracks the score for Team B
+    int scoreTeamB = 0;
+
+    //Tracks the fouls for Team B
+    int foulsB = 0;
 
     /**
-     * Increase the score for Team A by 1 point.
+     * Increase the score for Team A by 1 goal.
      */
     public void addOneForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
@@ -21,17 +34,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the foults for Team A by 1 point.
+     * Increase the fouls for Team A by 1.
      */
-    public void addFoultForTeamA(View v) {
-        foults = foults + 1;
-        displayFoultForTeamA((foults) + " FOULTS");
+    public void addFoulForTeamA(View v) {
+        foulsA = foulsA + 1;
+        displayFoulForTeamA((foulsA) + " FOULS");
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    /**
+     * Increase the score for Team B by 1 goal.
+     */
+    public void addOneForTeamB(View v) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
+     * Increase the fouls for Team B by 1.
+     */
+    public void addFoulForTeamB(View v) {
+        foulsB = foulsB + 1;
+        displayFoulForTeamB((foulsB) + " FOULS");
     }
 
     /**
@@ -43,11 +66,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for Team A.
-     * @param foult
+     * Displays the given fouls for Team A.
+     * @param foul
      */
-    public void displayFoultForTeamA(String foult) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_foults);
-        scoreView.setText(String.valueOf(foult));
+    public void displayFoulForTeamA(String foul) {
+        TextView scoreView = (TextView) findViewById(R.id.team_a_fouls);
+        scoreView.setText(String.valueOf(foul));
+    }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Displays the given fouls for Team B.
+     * @param foul
+     */
+    public void displayFoulForTeamB(String foul) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_fouls);
+        scoreView.setText(String.valueOf(foul));
     }
 }

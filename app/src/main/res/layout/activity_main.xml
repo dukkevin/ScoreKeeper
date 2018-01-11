@@ -11,6 +11,18 @@
         android:layout_height="match_parent"
         android:background="#506ed7">
 
+        <!-- Head Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:text="Semi Final - 2018"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -21,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp">
 
+                <!-- Team A Layout -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -31,7 +44,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:src="@drawable/teamalogo" />
+                        android:src="@drawable/team_a_logo" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -52,18 +65,18 @@
                         android:gravity="center_horizontal"
                         android:text="0"
                         android:textColor="#fff"
-                        android:textSize="56sp"/>
+                        android:textSize="56sp" />
 
                     <TextView
-                        android:id="@+id/team_a_foults"
+                        android:id="@+id/team_a_fouls"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
                         android:gravity="center_horizontal"
-                        android:text="0 foults"
+                        android:text="0 fouls"
+                        android:textAllCaps="true"
                         android:textColor="#fff"
-                        android:textSize="10sp"
-                        android:textAllCaps="true"/>
+                        android:textSize="10sp" />
 
                     <Button
                         android:layout_width="match_parent"
@@ -77,28 +90,76 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:onClick="addFoultForTeamA"
-                        android:text="Add Foult"
+                        android:onClick="addFoulForTeamA"
+                        android:text="Add Foul"
                         android:textAllCaps="true" />
                 </LinearLayout>
 
+                <!-- Team B Layout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/team_b_logo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:text="Quin's Team"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="56sp" />
+
+                    <TextView
+                        android:id="@+id/team_b_fouls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:text="0 fouls"
+                        android:textAllCaps="true"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:onClick="addOneForTeamB"
+                        android:text="+1 Goal"
+                        android:textAllCaps="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:onClick="addFoulForTeamB"
+                        android:text="Add Foul"
+                        android:textAllCaps="true" />
+                </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center_horizontal"
-            android:text="Semi Final - 2018"
-            android:textAllCaps="true"
-            android:textColor="#fff"
-            android:textSize="14sp" />
-
 
     </RelativeLayout>
 
