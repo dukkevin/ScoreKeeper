@@ -90,4 +90,24 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_fouls);
         scoreView.setText(String.valueOf(foul));
     }
+
+    /**
+     * Reset score for both teams back to 0.
+     */
+    public void resetScore(View v) {
+        scoreTeamA = 0;
+        displayForTeamA(scoreTeamA);
+        scoreTeamB = 0;
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
+     * Reset fouls for both teams back to 0.
+     */
+    public void resetFouls(View v) {
+        foulsA = 0;
+        displayFoulForTeamA((foulsA) + " FOULS");
+        foulsB = 0;
+        displayFoulForTeamB((foulsB) + " FOULS");
+    }
 }

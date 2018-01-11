@@ -95,6 +95,12 @@
                         android:textAllCaps="true" />
                 </LinearLayout>
 
+                <!-- Divider -->
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white" />
+
                 <!-- Team B Layout -->
                 <LinearLayout
                     android:layout_width="0dp"
@@ -160,6 +166,36 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <!-- Reset Buttons -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="60dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="resetScore"
+                    android:text="Reset score"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="resetFouls"
+                    android:text="Reset fouls"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
