@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ScoreKeeper</string>
+    <string name="title">Semi-Finals</string>
+    <string name="team_1">F.C. Fortuna</string>
+    <string name="score_1">0</string>
+    <string name="fouls_1">0 fouls</string>
+    <string name="add_goal">+1 Goal</string>
+    <string name="add_foul">Add Foul</string>
+    <string name="team_2">Quin's Team</string>
+    <string name="score_2">0</string>
+    <string name="fouls_2">0 fouls</string>
+    <string name="reset_score">Reset Score</string>
+    <string name="reset_fouls">Reset Fouls</string>
+    <string name="reset_all">Reset All</string>
 </resources>

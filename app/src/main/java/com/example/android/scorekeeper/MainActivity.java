@@ -110,4 +110,16 @@ public class MainActivity extends AppCompatActivity {
         foulsB = 0;
         displayFoulForTeamB((foulsB) + " FOULS");
     }
+
+    public void resetAll (View v) {
+        scoreTeamA = 0;
+        displayForTeamA(scoreTeamA);
+        scoreTeamB = 0;
+        displayForTeamB(scoreTeamB);
+
+        foulsA = 0;
+        displayFoulForTeamA((foulsA) + " FOULS");
+        foulsB = 0;
+        displayFoulForTeamB((foulsB) + " FOULS");
+    }
 }

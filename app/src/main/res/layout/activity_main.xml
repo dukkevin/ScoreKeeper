@@ -18,7 +18,7 @@
             android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center_horizontal"
-            android:text="Semi Final - 2018"
+            android:text="@string/title"
             android:textAllCaps="true"
             android:textColor="#fff"
             android:textSize="14sp" />
@@ -52,7 +52,7 @@
                         android:layout_marginTop="6dp"
                         android:fontFamily="sans-serif-medium"
                         android:gravity="center_horizontal"
-                        android:text="F.C. Fortuna"
+                        android:text="@string/team_1"
                         android:textColor="#fff"
                         android:textSize="12sp" />
 
@@ -63,7 +63,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="sans-serif-black"
                         android:gravity="center_horizontal"
-                        android:text="0"
+                        android:text="@string/score_1"
                         android:textColor="#fff"
                         android:textSize="56sp" />
 
@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
                         android:gravity="center_horizontal"
-                        android:text="0 fouls"
+                        android:text="@string/fouls_1"
                         android:textAllCaps="true"
                         android:textColor="#fff"
                         android:textSize="10sp" />
@@ -83,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
                         android:onClick="addOneForTeamA"
-                        android:text="+1 Goal"
+                        android:text="@string/add_goal"
                         android:textAllCaps="true" />
 
                     <Button
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:onClick="addFoulForTeamA"
-                        android:text="Add Foul"
+                        android:text="@string/add_foul"
                         android:textAllCaps="true" />
                 </LinearLayout>
 
@@ -120,7 +120,7 @@
                         android:layout_marginTop="6dp"
                         android:fontFamily="sans-serif-medium"
                         android:gravity="center_horizontal"
-                        android:text="Quin's Team"
+                        android:text="@string/team_2"
                         android:textColor="#fff"
                         android:textSize="12sp" />
 
@@ -131,7 +131,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="sans-serif-black"
                         android:gravity="center_horizontal"
-                        android:text="0"
+                        android:text="@string/score_2"
                         android:textColor="#fff"
                         android:textSize="56sp" />
 
@@ -141,7 +141,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
                         android:gravity="center_horizontal"
-                        android:text="0 fouls"
+                        android:text="@string/fouls_2"
                         android:textAllCaps="true"
                         android:textColor="#fff"
                         android:textSize="10sp" />
@@ -151,7 +151,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
                         android:onClick="addOneForTeamB"
-                        android:text="+1 Goal"
+                        android:text="@string/add_goal"
                         android:textAllCaps="true" />
 
                     <Button
@@ -159,7 +159,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:onClick="addFoulForTeamB"
-                        android:text="Add Foul"
+                        android:text="@string/add_foul"
                         android:textAllCaps="true" />
                 </LinearLayout>
 
@@ -183,14 +183,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="resetScore"
-                    android:text="Reset score"
+                    android:text="@string/reset_score"
                     android:textAllCaps="true" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="resetFouls"
-                    android:text="Reset fouls"
+                    android:text="@string/reset_fouls"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="resetAll"
+                    android:text="@string/reset_all"
                     android:textAllCaps="true" />
 
             </LinearLayout>
